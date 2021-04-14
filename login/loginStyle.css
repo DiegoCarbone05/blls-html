@@ -1,0 +1,26 @@
+#cardLogin{
+
+    margin:auto;
+    width: 50%;
+    margin-top: 150px;
+}
+
+*:focus {
+    outline: none;
+}
+
+*{
+    outline: none;
+}
+
+*:active{
+    outline: none;
+}
+
+*:hover{
+    outline: none;
+}
+
+.hide{
+    display: none;
+}

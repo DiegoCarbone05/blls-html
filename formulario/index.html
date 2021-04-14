@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./video reference.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="../../../../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="./main.ts"></script>
+    <script src="./main.js"></script>
+
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="stylesheet" href="../CSS/estilosBLL.css">
+
+
+    <title>Formulario</title>
+
+
+</head>
+
+<body style="background-color: #161616;">
+
+    <!--Barra de navegacion-->
+
+    <nav style="height: 11vh; background: #212121 ;" class="navbar navbar-expand fixed-top">
+        <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#"></a>
+
+        <button style=" background:none; border: none; outline: none;" onclick="Ir('/CarboNET%20Proyect/departamentos/Barrio%20la%20loma%20LIVE/barrio-la-loma-studio/sala-prestream/')">
+
+            <img style="height: 3vh; " src="./assets/img/Arrow.png" alt="">
+
+        </button>
+
+        <label form="" class="bll">Barrio La Loma</label>
+
+
+
+
+        <div id="txtLive" class="live-off">LIVE</div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+        </div>
+    </nav>
+
+
+
+
+    <div style="margin-top: 20vh; text-align: center;width: 100vw; height: 10vh;">
+
+        <label class="titulo">
+            Reunion semanal 2021 de los <br> Testigos de Jehová
+        </label>
+
+    </div>
+
+    <div style="margin-top: 12vh; text-align: center;width: 100vw; height: 10vh;">
+
+        <label class="text">
+            Indique cuantas personas estan viendo la reunion desde este dispositivo 
+        </label>
+
+    </div>
+
+
+
+<div class="padre" style="background: rgba(128, 255, 0, 0); width: 100%;height: 50px; margin-top:10vh;">
+    <div class="divForm">
+        
+        <table>
+            
+            <tr>
+                
+                <td style=" width: 20px; background-color: rgba(137, 43, 226, 0); ">
+                                       
+                    <button class="btnContador" style=" display: flex;justify-content: center;align-items: center; width: 4vw;" id="btnMenos" onclick="restar()">
+                    
+                        <img style="width: fit-content;height: fit-content; " src="./assets/img/-.png" alt="">
+
+                    </button>
+                
+                    
+                    
+                </td>
+            
+                <td>
+                    <div style=" background-color: rgba(0, 255, 255, 0); text-align: center; width: 150px;">
+                        <label id="lblNumero" >0</label>
+                    </div> 
+                </td>
+
+
+                
+                <td style="background-color: rgba(165, 42, 42, 0);" >
+                    
+                    <button class="btnContador" style=" display: flex;justify-content: center;align-items: center; width: 4vw;" id="btnMas" onclick="sumar()">
+                    
+                        <img style="width: fit-content;height: fit-content; " src="./assets/img/+.png" alt="">
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+</div>
+
+
+<div style="margin-top: 15vh; display: flex;justify-content: center;align-items: center; height: 50px; width: 100%; background-color: rgba(128, 255, 0, 0);">
+
+<button style=" width: 225px;height: 70px; font-weight: 500;" type="button" class="btn btn-secondary btn-lg btnVerAhora ">Ver Ahora</button>
+
+</div>
+
+</body>
+
+</html>

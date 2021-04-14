@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
+  <g id="Signo_mas" data-name="Signo mas" transform="translate(-1025 -580)">
+    <g id="Elipse_1" data-name="Elipse 1" transform="translate(1025 580)" fill="none" stroke="#4a6a75" stroke-width="6">
+      <circle cx="33" cy="33" r="33" stroke="none"/>
+      <circle cx="33" cy="33" r="30" fill="none"/>
+    </g>
+    <line id="Línea_2" data-name="Línea 2" x2="30" transform="translate(1043 613)" fill="none" stroke="#4a6a75" stroke-width="7"/>
+    <line id="Línea_3" data-name="Línea 3" x2="30" transform="translate(1058 598) rotate(90)" fill="none" stroke="#4a6a75" stroke-width="7"/>
+  </g>
+</svg>

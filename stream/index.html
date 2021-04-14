@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barrio la loma Studio 🔴</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href="./video reference.css" rel="stylesheet">
+  <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+
+  <link href="../../../../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../../../../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+
+  <link rel="stylesheet" href="../../../../estilos.css">
+  <link rel="stylesheet" href="streamStyles.css">
+
+  <script>
+
+
+    function reportWindowSize() {
+      console.log(window.innerWidth, window.innerHeight);
+    }
+
+    window.onresize = reportWindowSize;
+  </script>
+
+</head>
+
+<body style="background-color: #161616;width: 100%;">
+
+  <!--Barra de navegacion-->
+
+  <nav style="background: #212121 ;" class="navbar navbar-expand fixed-top">
+    <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#"></a>
+    <img class="carbone-logo-bll" style="width: 50px;" src="../../../../assets/SVGs/Carbone Logo Remazterizado.svg"
+      alt="">
+    <h3 class="bll">Barrio la Loma</h3>
+
+
+
+    <div id="txtLive" class="live-off">LIVE</div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!--GanuBotones de barra de navegacion superior-->
+
+      <button id="btnStream" style="margin-left:10px ;" class="ganu-btn">Iniciar Stream</button>
+
+      <button id="registrarAsistencia"  class="ganu-btn-live">Registrar Asistencia</button>
+
+
+    </div>
+  </nav>
+
+  <!--Reproductor CODE-->
+
+
+
+
+
+  
+
+  <video id="player" class="video-js vjs-default-skin hide" controls preload="none">
+   <source src="http://192.168.0.118:8080/livestream/stream.m3u8" type="application/x-mpegURL">
+
+   Your browser does not support the video tag.
+  </video>
+ 
+
+  <script>
+  var player = videojs('#player')
+  </script>
+  
+<!--Contador de Asistencias-->
+
+<button type="button" id="btnModal" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+
+<div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">Asistencia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: black;">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="number" class="form-control" id="recipient-name">
+            <button class="ganu-btn">+</button>
+            <button class="ganu-btn">-</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar asistencia</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
