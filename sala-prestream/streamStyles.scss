@@ -154,6 +154,17 @@ width: 20px;
 
     }
 
+    @media only screen and (max-width:767px) {
+      .tarjetImg{
+
+        display: none;
+        background-color: #212121;; 
+        background-size: cover;
+        height: 50vh;
+
+      }
+    }
+
     .tarjetTittle{
 
 
@@ -242,7 +253,7 @@ width: 20px;
       
             /*Resolucion chica*/
     
-        @media only screen and (max-width:701px) {
+        @media only screen and (max-width:758px) {
           .fecha{
     
             font-size: 15px;

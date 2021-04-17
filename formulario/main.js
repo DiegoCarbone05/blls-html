@@ -17,3 +17,8 @@ function cambiarNumero() {
 function Ir(url) {
     location.href = url;
 }
+function activacionBtn() {
+}
+function btnVer(url) {
+    location.href = url;
+}

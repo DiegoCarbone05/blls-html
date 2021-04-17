@@ -27,13 +27,10 @@ height: 200px;
     min-width: 400px;
 }
 
-#player{
-  position:relative;
-  left: 10%;
-  margin-top: 3.5%;
-  min-width: -100px;
-  width: 1505px;
-  height: 850px;
+.player{
+
+  width: 100vw;
+  height: 100vh;
   
 }
 

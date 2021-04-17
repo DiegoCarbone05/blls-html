@@ -41,3 +41,15 @@ function Ir(url:string){
 
 } 
 
+function activacionBtn(){
+
+    
+
+}
+
+function btnVer(url:string){
+
+    location.href=url;
+
+}
+
