@@ -7,7 +7,7 @@ jQuery(()=>{
 
     $("#volver").on("click", ()=>{
 
-        location.href = "../inicio";
+        location.href = "/meet-konnect";
 
     })
 

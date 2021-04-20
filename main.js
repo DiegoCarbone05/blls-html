@@ -1,4 +1,4 @@
-/// <reference path="../../../../node_modules/@types/jquery/index.d.ts" />
+//<reference path="../../../../node_modules/@types/jquery/index.d.ts" />
 jQuery(function () {
     jQuery("button [title=\"Play Video\"]").attr("disabled", "true");
     window.onresize = reportWindowSize;
