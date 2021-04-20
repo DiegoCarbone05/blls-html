@@ -1,12 +1,18 @@
-/// <reference path="../../../../node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../node_modules/@types/jquery/index.d.ts"/>
 
 //#player > button 
+
+
 jQuery(()=>{
 
-    $("#player > button").click
+    $("#volver").on("click", ()=>{
+
+        location.href = "../inicio";
+
+    })
+
 
 })
-
 
 
 

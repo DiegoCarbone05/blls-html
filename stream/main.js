@@ -1,12 +1,7 @@
-/// <reference path="../../../../node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../node_modules/@types/jquery/index.d.ts"/>
+//#player > button 
 jQuery(function () {
-    jQuery("button [title=\"Play Video\"]").attr("disabled", "true");
-    jQuery("#btnStream").on("click", function () {
-        jQuery("#txtLive").attr("class", "live-on");
-        jQuery("#player").removeClass("hide");
-        jQuery("#imgBanner").addClass("hide");
+    $("#volver").on("click", function () {
+        location.href = "../inicio";
     });
-    setTimeout(function () {
-        $('#btnModal').trigger("click");
-    }, 3000);
 });

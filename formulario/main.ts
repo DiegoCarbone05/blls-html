@@ -32,6 +32,17 @@ function cambiarNumero() {
 
     document.getElementById("lblNumero").innerHTML = numero.toString();
 
+    if (numero <= 0){
+        var btnVer = document.querySelector('#ver');
+        btnVer.setAttribute("disabled","disabled");
+
+    }
+    else
+    {
+        var btnVer = document.querySelector('#ver');
+        btnVer.removeAttribute("disabled");
+    }
+
 }
 
 function Ir(url:string){
@@ -52,4 +63,5 @@ function btnVer(url:string){
     location.href=url;
 
 }
+
 

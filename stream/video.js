@@ -9,8 +9,6 @@
  * Available under Apache License Version 2.0
  * <https://github.com/mozilla/vtt.js/blob/master/LICENSE>
  */
-  
-
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -13535,7 +13533,7 @@
 
       this.contentEl_ = createEl('div', {
         className: 'vjs-live-display',
-        innerHTML: '<span class="vjs-control-text">' + this.localize('Stream Type') + '\xA0</span>' + this.localize('Barrio La Loma LIVE')
+        innerHTML: '<span class="vjs-control-text">' + this.localize('Stream Type') + '\xA0</span>' + this.localize('En Vivo')
       }, {
         'aria-live': 'off'
       });
@@ -38315,7 +38313,6 @@
         this.error = {
           playlist: this.master.playlists[url],
           status: xhr.status,
-          message: 'HLS playlist request error at URL: ' + url,
           responseText: xhr.responseText,
           code: xhr.status >= 500 ? 4 : 2
         };
