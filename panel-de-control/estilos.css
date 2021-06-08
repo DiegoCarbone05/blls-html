@@ -1,0 +1,198 @@
+@import url('../estilos/estilosBLL.css');
+
+.nav{
+
+    width: 100vw; 
+    height: 10vh; 
+    background-color:var(--dark-secodary-color);
+
+}
+
+.cajaStream{
+
+    margin-top: 2vh;
+    margin-left: 0.8vw;
+
+    width: 61.8vw;
+    height: 350px;
+    position: relative;
+
+    background-color: var(--dark-secodary-color);
+
+
+}
+
+.cajaMonitoreo{
+
+    margin-top: 2vh;
+    margin-left: 0.8vw;
+    float: left;
+    position: relative;
+
+    width: 30.5vw;
+    height: 435px;
+
+    background-color: var(--dark-secodary-color);
+
+
+}
+
+.cajaInfo{
+    
+margin-top: 2vh;
+margin-left: 1vw;
+float: left;
+position: relative;
+
+width: 35vw;
+height: 800px;
+
+background-color:var(--dark-secodary-color);
+}
+
+@media only screen and (max-width:1366px){
+    .cajaInfo{
+  
+      margin-left: 5px ;
+      height: 534px;
+
+
+    }
+}
+
+@media only screen and (max-width:1366px){
+.cajaMonitoreo{
+  
+    height: 270px;
+
+
+    }
+}
+
+@media only screen and (max-width:1366px){
+    .cajaStream{
+      
+        height: 250px;
+        
+    
+    }
+}
+
+.tituloTag{
+
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 2vh;
+    margin-top: 40px;
+
+}
+
+.titulo{
+
+    color: var(--primary-text-color);
+    font-size: 3vh;
+
+}
+
+.fechaTag{
+
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.fecha{
+
+    color: var(--primary-text-color);
+    font-size: 3vh;
+
+}
+
+.btnVolver {
+	outline:none;
+	position: relative;
+	border: 0px;
+	background-color: #F04747;
+	padding: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	font-weight:550;
+	margin-left: 25px;
+
+}
+
+.btnlive {
+	outline:none;
+	position: relative;
+	border: 0px;
+	background-color: #F04747;
+	padding: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	font-weight:550;
+	margin-left: 25px;
+    display: none;
+
+}
+
+.btnEndlive {
+	outline:none;
+	position: relative;
+	border: 0px;
+	background-color: #3EA6FF;
+	padding: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	font-weight:550;
+	margin-left: 25px;
+
+}
+
+.btnAplicar {
+	outline:none;
+	position: relative;
+	border: 0px;
+	background-color: #ffffff;
+	padding: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	font-weight:550;
+	margin-left: 25px;
+
+}

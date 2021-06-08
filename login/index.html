@@ -1,137 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0091)https://my.jw.org/home/es/login?app=studio.stream.jw.org&postLoginUri=%2Fapp&locale_code=es -->
+<html class="lang-es dir-ltr" lang="es" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Barrio La Loma LIVE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<base href="/home/">-->
+  <base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <!-- icon assets -->
 
-    <link href="../../../../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../../../../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
-    <script src="./main.js"></script>
+  <link rel="mask-icon" href="https://cdh.azureedge.net/assets/cdh/branding/v1/safari-pinned-tab.svg" color="#e36600">
+  <meta name="msapplication-config" content="https://cdh.azureedge.net/assets/cdh/branding/v1/browserconfig.xml">
+  <meta name="theme-color" content="#33A0DA">
+  <!-- /icon assets -->
+  <link rel="stylesheet"
+    href="./Log In __ Inicio __ Testigos de Jehová_files/styles.079c6e5ee9256a52bc28cf9c5c9f5899.css"
+    crossorigin="anonymous" integrity="sha384-+QaNeGdvMem9+X5430VMVkk+Ed0f5YZmaNTb8iuoFvhaItjBTXVSq/H/5ITHpWyn">
+    <link rel="shortcut icon" href="../assets-general/IMG/bls.png" type="image/png">
+  <title>BLS Login</title>
+  <style>
+    .spinner__resolving[_ngcontent-oqn-c69] {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
-    <link rel="stylesheet" href="../../../../estilos.css">
-    <link rel="stylesheet" href="loginStyle.css">
+    .spinner--top-nav-offset[_ngcontent-oqn-c69] {
+      margin-top: -48px;
+    }
 
+    .spinner--side-nav-offset[_ngcontent-oqn-c69] {
+      margin-left: -110px;
+    }
+  </style>
+  <link href="./Log In __ Inicio __ Testigos de Jehová_files/legal-notices-client.css" rel="stylesheet" type="text/css"
+    integrity="sha384-I0uhARcw4Zatn4J+bFTJQ723tiDOahSUTQQIm0jk77J8MG9/V36xbgFMKT3Ebj7O" crossorigin="anonymous">
+  <script src="./Log In __ Inicio __ Testigos de Jehová_files/legal-notices-client.min.js.descarga"
+    type="text/javascript" integrity="sha384-pSneJ8/+u4tM3/7JE4Wp1/7vMDnrZeZmolRaX6HUgE4MbYMuppeBTpCvzrVIZIx7"
+    crossorigin="anonymous"></script>
 
-
+  <link rel="stylesheet" href="./bls-login.css">
 </head>
 
-<body style="background-color:#1a1a1a ;">
-
-    <nav style="background: #212121 ;" class="navbar navbar-expand fixed-top">
-        <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#"></a>
-        <img class="carbone-logo-bll" style="width: 50px; background-size: cover;"
-            src="../../../../assets/SVGs/Carbone Logo Remazterizado.svg" alt="">
-        <h3 class="bll">Barrio la Loma</h3>
-
-
-
-        <div id="txtLive" class="live-off">LIVE</div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!--GanuBotones de barra de navegacion superior-->
-
-            <button id="btnStream" style="margin-left:10px;" class="ganu-btn">Iniciar Stream</button>
+<body class="lang-es dir-ltr" lang="es" dir="ltr" style="background-color:#e7e7e7 ;">
+  <app-root ng-version="11.2.12">
+    <!---->
+    <ptrn-site _nghost-oqn-c69="" class="ng-tns-c69-1 ng-star-inserted">
+      <section _ngcontent-oqn-c69="" class="layout ng-tns-c69-1"><input _ngcontent-oqn-c69="" type="checkbox"
+          id="side-nav__is-collapsed" class="side-nav__is-collapsed ng-tns-c69-1 ng-untouched ng-pristine ng-valid">
+        <ptrn-top-nav class="ng-tns-c69-1">
+          <nav class="top-nav">
+            <div class="top-nav__primary-items"><label for="side-nav__is-collapsed"
+                class="top-nav__branding-label top-nav__branding-label--trademarked">
+                <!---->
+                <div class="top-nav__logo">
 
 
-        </div>
-    </nav>
-
-
-    <div id="cardLogin" class="card" style="width: 25rem;">
-        <div class="card-body">
-            <h5 style="text-align: center; margin-bottom: 20px;" class="card-title">Iniciar Sesión</h5>
-
-            <form id="formulario" onsubmit="Login(event)">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">
-
-                            <!--User Icon-->
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg>
-
-
-
-                        </span>
-                    </div>
-                    <input id="email" type="email" class="form-control" placeholder="Username" aria-label="Username"
-                        aria-describedby="basic-addon1">
-
+                  <!--logo--><a class="top-nav__branding ng-star-inserted" href="../">
+                    <ptrn-top-nav-branding link="/" class="ng-star-inserted"><span class="ng-star-inserted">
+                        <img viewBox="0 0 67 50" width="48" height="48" src="./assets/SVG/blsAcount.svg" alt="">
+                        <!---->
+                        <!---->
+                    </ptrn-top-nav-branding>
+                    <!---->
+                  </a>
+                  <!---->
+                  <!---->
                 </div>
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">
-
-                            <!--User Icon-->
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-key-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                            </svg>
-
-
-                        </span>
-                    </div>
-                    <input id="clave" type="password" class="form-control" placeholder="Username" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-
-                <table>
-                    <td>
-                        <button style="background-color: #212121; border: none; outline: none !important;" type="submit"
-                            class="btn btn-primary">Iniciar Sesión</button>
-                    </td>
-
-                    <td>
-                        <button style="background-color: #212121; border: none;" type="reset"
-                            class="btn btn-primary">Borrar todo</button>
-                    </td>
-                </table>
-
-            </form>
-            <br>
-            <div id="alerta" class="alert alert-primary hide" role="alert">
+                <!---->
+              </label>
+              <h1 class="top-nav__title ng-star-inserted">Barrio La Loma</h1>
+              <!---->
+              <!---->
             </div>
-        </div>
-    </div>
+            <aside class="top-nav__secondary-items">
 
-    <!-- Button trigger modal -->
-    <button id="modalBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" hidden>
-        Launch demo modal
-    </button>
+              <ptrn-modal>
+                <!---->
+                <!---->
+              </ptrn-modal>
+              </ptrn-top-nav-language>
+              <!---->
+            </aside>
+          </nav>
+        </ptrn-top-nav>
+        <section _ngcontent-oqn-c69="" class="layout__content ng-tns-c69-1">
+          <!---->
+          <!---->
+          <router-outlet _ngcontent-oqn-c69="" name="ptrn-side-nav" class="ng-tns-c69-1"></router-outlet>
+          <!---->
+          <main _ngcontent-oqn-c69="" class="layout__main ng-tns-c69-1"><label _ngcontent-oqn-c69=""
+              for="side-nav__is-collapsed" class="ng-tns-c69-1">
+              <div _ngcontent-oqn-c69="" class="site__dimmer ng-tns-c69-1"></div>
+            </label>
+            <router-outlet _ngcontent-oqn-c69="" name="ptrn-site-message" class="ng-tns-c69-1 ng-star-inserted">
+            </router-outlet>
+            <app-site-messages class="ng-star-inserted">
+              <!---->
+            </app-site-messages>
+            <!---->
+            <router-outlet _ngcontent-oqn-c69="" class="ng-tns-c69-1 ng-star-inserted"></router-outlet>
+            <app-username class="ng-star-inserted">
+              <app-username-form>
+                <section class="page-content grid grid--full grid--main-center grid--cross-center grid--no-bleed">
+                  <div class="login-container">
+                    <!---->
+                    <!---->
+                    <div class="login-block grid grid--collapse grid--nowrap@medium-up card">
+                      <div class="grid__item grid__item--shrink login-graphic login-graphic--1"> <img class="loginImg"
+                          src="./assets/PNG/mk-background.png" loading="lazy" alt=""> </div>
+                      <div class="login-form grid__item">
+                        <article class="padding-2">
+                          <header class="grid grid--cross-center">
+                            <div class="grid__item grid__item--shrink padding-right-0 hide@small hide@medium">
+                              <app-apps-logo>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+                                <img class="apps-logo" src="./assets/SVG/blsAcount.svg">
 
-                <div class="modal-body">
-                    <img src="./assets/quienSos.jpg" alt="">
+                              </app-apps-logo>
+
+                            </div>
+                            <h2 ptrntranslate="" style="margin-right: 95px;" class="grid__item login-header">Iniciar sesión</h2>
+                          </header>
+                          <form novalidate=""
+                            class="form form--gutter margin-top-1 container--small ng-pristine ng-valid ng-touched">
+                            <ptrn-field class="field">
+                              <!---->
+                              <!--Email--><label for="userName" ptrntranslate=""
+                                class="field__label ng-star-inserted">Escriba su correo electronico</label>
+                              <input spellcheck="false" formcontrolname="userName" type="email"
+                                class="field__input field__input--grow ng-pristine ng-valid ng-star-inserted ng-touched"
+                                autocomplete="none" id="form.userName">
+
+                              <!--Contraseña--><label style="margin-top: 20px;" for="userName" ptrntranslate=""
+
+                                class="field__label ng-star-inserted">Escriba su contraseña</label>
+                              <input spellcheck="false" formcontrolname="userName" type="password"
+                                class="field__input field__input--grow ng-pristine ng-valid ng-star-inserted ng-touched"
+                                autocomplete="none" id="form.userName">
+
+                              <div class="field-messages ng-star-inserted">
+                                <ptrn-field-error name="required">
+                                  <!---->
+                                  <p class="field-messages__message field-messages__message--error"
+                                    style="display: none;"><span
+                                      class="field-messages__message-icon field-messages__message--error-icon">
+                                    
+                                      <ptrn-translate>Este campo es obligatorio.</ptrn-translate>
+                                    </span></p>
+                                </ptrn-field-error>
+                                <ptrn-field-error name="userNameDomainValidator">
+                                  <!---->
+                                  <p class="field-messages__message field-messages__message--error"
+                                    style="display: none;"><span
+                                      class="field-messages__message-icon field-messages__message--error-icon">
+                                      
+                                    </span><span>
+                                      <ptrn-translate>Este dominio no es válido: @{{1}}</ptrn-translate>
+                                    </span></p>
+                                </ptrn-field-error>
+                                <!---->
+                              </div>
+                              <!---->
+                              <!---->
+                              <!---->
+                            </ptrn-field>
+                            <div class="field">
+                              <div class="field__selection margin-bottom-0"><input type="checkbox"
+                                  formcontrolname="rememberMe" id="rememberMe" name="rememberMe"
+                                  class="field__checkbox ng-untouched ng-pristine ng-valid"><label for="rememberMe"
+                                  ptrntranslate="" class="field__checkbox-label">Recordar mis datos</label></div>
+                              
+                              <!---->
+                            </div>
+                            <ptrn-button isprimary="true"><button class="button button--primary ng-star-inserted"
+                                type="submit">
+                                <!---->
+                                <ptrn-translate class="ng-star-inserted">Ingresar</ptrn-translate>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                              </button>
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                              <!---->
+                            </ptrn-button>
+                          </form>
+                          <!---->
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </app-username-form>
+            </app-username>
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+          </main>
+        </section>
+        <ptrn-footer class="ng-tns-c69-1">
+          <footer class="layout__footer">
+            <app-standard-footer>
+              <div class="grid grid--cross-center grid--wrap-gutter@small grid--shrink grid--no-bleed padding-1">
+                <div class="grid__item grid__item--grow">
+                  <p class="layout__footer-text">2021 MeetKonnect - Barrio la loma Studio | Jehovah Witness</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                <ul class="grid__item grid grid--no-bleed grid--cross-center list list--inline">
+                  <li class="list__item ng-star-inserted"><a href="https://jw.org/" target="_blank"
+                      class="layout__footer-link grid grid--cross-center grid--no-bleed">
+                      <ptrn-icon icon="logo-no-trademark" cssclass="p700" aria-hidden="true"><span
+                          class="icon p700"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"
+                            class="icon__body" height="24" width="24">
+                            <style type="text/css">
+                              .st1 {
+                                fill: #FFFFFF;
+                              }
+                            </style>
+                            <rect width="80" height="80"></rect>
+                            <path class="st1"
+                              d="M22.7 41.2c-1.6 0-3-0.2-4.1-0.7 -1.1-0.5-2.1-1.1-3.1-1.8l1.5-2.8c0.9 0.7 1.7 1.2 2.6 1.6 0.9 0.4 1.8 0.6 2.8 0.6 1.4 0 2.4-0.5 3.2-1.5 0.7-1 1.1-2.4 1.1-4.1V13.3h3.5v19c0 2.7-0.6 4.8-1.8 6.4C27.2 40.4 25.3 41.2 22.7 41.2M39.9 40.9h3l6.5-20.6 5.9 20.6h3.1l6.7-27.5h-3.7c0 0-4.4 19.9-4.7 20.9L51 14.4h-3l-6.1 19.9 -4.4-20.9h-3.8L39.9 40.9zM27.5 66c1-0.5 1.8-1.1 2.5-2 0.7-0.9 1.2-1.9 1.6-3.1 0.4-1.2 0.6-2.5 0.6-4 0-1.4-0.2-2.8-0.6-3.9 -0.4-1.2-0.9-2.2-1.7-3 -0.7-0.8-1.6-1.5-2.5-1.9 -1-0.5-2.1-0.7-3.3-0.7 -1.2 0-2.3 0.2-3.3 0.7 -1 0.5-1.9 1.1-2.6 1.9 -0.7 0.8-1.3 1.9-1.7 3 -0.4 1.2-0.6 2.5-0.6 4 0 1.4 0.2 2.8 0.5 3.9 0.4 1.2 0.9 2.2 1.6 3.1 0.7 0.8 1.5 1.5 2.5 2 1 0.5 2.2 0.7 3.5 0.7C25.4 66.7 26.5 66.5 27.5 66zM26.6 49.7c0.7 0.4 1.4 1 1.9 1.7 0.5 0.7 0.9 1.5 1.2 2.5 0.3 0.9 0.4 2 0.4 3.1 0 1.2-0.2 2.2-0.4 3.2 -0.3 1-0.7 1.8-1.2 2.5 -0.5 0.7-1.2 1.3-1.9 1.7C25.8 64.8 25 65 24.2 65c-0.9 0-1.7-0.2-2.5-0.6 -0.7-0.4-1.4-1-1.9-1.7 -0.5-0.7-0.9-1.6-1.2-2.5 -0.3-1-0.4-2-0.4-3.2 0-1.1 0.1-2.2 0.4-3.1 0.3-0.9 0.7-1.8 1.2-2.5 0.5-0.7 1.2-1.3 1.9-1.6 0.7-0.4 1.6-0.6 2.5-0.6C25 49.1 25.9 49.3 26.6 49.7zM48.8 66.4l-5.2-8.1 0.3-0.1c0.6-0.1 1.2-0.4 1.7-0.6 0.5-0.3 1-0.6 1.4-1 0.4-0.4 0.7-0.9 0.9-1.5 0.2-0.6 0.3-1.2 0.3-1.9 0-0.9-0.2-1.8-0.5-2.4 -0.3-0.7-0.8-1.2-1.4-1.7 -0.6-0.4-1.3-0.8-2.1-1 -0.8-0.2-1.6-0.3-2.4-0.3h-6.1v18.7h2v-7.8h3.8l4.9 7.8H48.8zM37.6 49.4h4c1.3 0 2.4 0.3 3.2 1 0.8 0.7 1.2 1.6 1.2 2.8 0 1.2-0.4 2.1-1.3 2.7 -0.8 0.6-1.9 0.9-3.4 0.9h-3.8V49.4zM61 66.5c0.6-0.1 1.1-0.3 1.6-0.5 0.5-0.2 0.9-0.5 1.3-0.7 0.4-0.2 0.7-0.5 1-0.8v-8h-6.4v1.7H63v5.4l-0.1 0.1c-0.3 0.3-0.8 0.6-1.4 0.9C60.8 64.8 60 65 59.2 65c-0.9 0-1.8-0.2-2.5-0.6 -0.8-0.4-1.4-0.9-2-1.6 -0.6-0.7-1-1.5-1.3-2.5 -0.3-1-0.5-2-0.5-3.2 0-1.1 0.2-2.2 0.5-3.2 0.3-1 0.8-1.8 1.3-2.5 0.6-0.7 1.2-1.3 2-1.6 0.8-0.4 1.6-0.6 2.4-0.6 1 0 1.9 0.2 2.7 0.6 0.7 0.3 1.3 0.8 1.9 1.2l1.2-1.6c-0.8-0.6-1.6-1.1-2.5-1.5 -0.9-0.4-2-0.5-3.2-0.5 -1.2 0-2.4 0.2-3.4 0.7 -1 0.5-1.9 1.2-2.6 2 -0.7 0.9-1.3 1.9-1.7 3 -0.4 1.2-0.6 2.5-0.6 3.8 0 1.5 0.2 2.8 0.6 4 0.4 1.2 1 2.2 1.7 3.1 0.7 0.8 1.6 1.5 2.7 2 1 0.5 2.2 0.7 3.5 0.7C59.8 66.7 60.4 66.6 61 66.5zM14.7 63.5h-2.9v2.9h2.9V63.5z">
+                            </path>
+                          </svg></span></ptrn-icon><span class="margin-left-05">JW.ORG</span>
+                    </a></li>
+                  <!---->
+                  <!---->
+                  
+                </ul>
+              </div>
+            </app-standard-footer>
+          </footer>
+        </ptrn-footer>
+        <ptrn-legal-notice _ngcontent-oqn-c69="" class="ng-tns-c69-1 ng-star-inserted"></ptrn-legal-notice>
+        <!---->
+      </section>
+      <ptrn-site-modal-outlet _ngcontent-oqn-c69="" class="ng-tns-c69-1">
+        <ptrn-modal class="ng-star-inserted">
+          <!---->
+          <!---->
+        </ptrn-modal>
+        <!---->
+        <!---->
+      </ptrn-site-modal-outlet>
+    </ptrn-site>
+    <!---->
+    <app-toasts>
+      <ptrn-toasts class="ng-tns-c75-0">
+        <div id="toast-container" class="toast-bottom-right toasts ng-tns-c75-0">
+          <!---->
         </div>
-    </div>
+      </ptrn-toasts>
+    </app-toasts>
+  </app-root>
+  <script
+    src="./Log In __ Inicio __ Testigos de Jehová_files/runtime-es2015.98212b549981dd40d9d1a3b08fcc1f9d.js.descarga"
+    crossorigin="anonymous" type="module"
+    integrity="sha384-7SDTSQYIz07eRC4Nm6jUIgS1+l39DPRzfVvsjC7SleNIVlLEdq4/zT47AJ7tpa7T"></script>
+  <script src="./Log In __ Inicio __ Testigos de Jehová_files/runtime-es5.15bcd116c87987705e4dc31ee4379527.js.descarga"
+    crossorigin="anonymous" nomodule="" defer=""
+    integrity="sha384-TIof/QTaAvxC2m0HWnB/KSvMxKDX0niPJ11F+PVTCk7XEba35lFIpY7qHOEYKXMj"></script>
+  <script
+    src="./Log In __ Inicio __ Testigos de Jehová_files/polyfills-es5.5ed931bf781bf9d7e88fdc090fde864d.js.descarga"
+    crossorigin="anonymous" nomodule="" defer=""
+    integrity="sha384-T7OVZhg+m/i80+nioxIS9hfc7OVQnu437MEAVzCuDYo1E876sbX2+EjneIxroPga"></script>
+  <script
+    src="./Log In __ Inicio __ Testigos de Jehová_files/polyfills-es2015.a3dcb82ea0478547909cd764f76ad1f1.js.descarga"
+    crossorigin="anonymous" type="module"
+    integrity="sha384-18A6fGYZjFwDeI39p6FHSGoTqwPVv7YWBjHFtG4tT9IU1FwpU+coLkbEMh0mLLwP"></script>
+  <script
+    src="./Log In __ Inicio __ Testigos de Jehová_files/vendor-es2015.f2b62a3930fffc3e0d48668395b9f850.js.descarga"
+    crossorigin="anonymous" type="module"
+    integrity="sha384-1OHeaJDr+X9eAbhEzNmNiBsiGDT6skvsql0a71l04esIBNwszqezUWRH9hNpPCk/"></script>
+  <script src="./Log In __ Inicio __ Testigos de Jehová_files/vendor-es5.2e7ac8ec75b172ff511707bed7bb34ea.js.descarga"
+    crossorigin="anonymous" nomodule="" defer=""
+    integrity="sha384-/2KLrtjSyzaMCx5PJCkhCHQeVXf7X6FS1aOAyY9jBVPUQoziBY24lY6Whg9QE81x"></script>
+  <script src="./Log In __ Inicio __ Testigos de Jehová_files/main-es2015.00142a6d6403f671e77b352999fadbae.js.descarga"
+    crossorigin="anonymous" type="module"
+    integrity="sha384-dJKZG064jr12zPuGkl3LlqTlLrxXjGcb4MupqdTgg/nrA+JSjyiriGGDIYejWK58"></script>
+  <script src="./Log In __ Inicio __ Testigos de Jehová_files/main-es5.c3fc6f8b13cf93273d3a168879393930.js.descarga"
+    crossorigin="anonymous" nomodule="" defer=""
+    integrity="sha384-WTHjcvY7vyWy9ux8ArGUxUq1YYdhCRdQrHuq8eV3p4DSjc8H2YYgs3OzNjEtcpsz"></script>
 
 </body>
 

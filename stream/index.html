@@ -22,9 +22,9 @@
 
 
   <script src="./main.js"></script>
-  <link rel="stylesheet" href="./estilos.scss">
+  <link rel="stylesheet" href="./estilos.css">
 
-  <link rel="shortcut icon" href="./assets/imgs/BLS icon jwcolor.png" type="image/png">
+  <link rel="shortcut icon" href="../assets-general/IMG/bls.png" type="image/png">
 
 
   <script>
@@ -47,11 +47,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <button class="btnVolver" id="volver"> <span><img style="width: 45px; margin-right: 20px;"
-
-        src="./assets/svgs/arrow_back_white_24dp.svg" class="tamañoArrow" alt=""></span> Volver
-      
-      </button>
+      <button class="btnVolver" id="volver">Salir</button>
 
     </div>
   </nav>
@@ -62,7 +58,7 @@
 
     <div class="lateralBar">
 
-      <div style="background-color: rgba(195, 0, 255, 0); font-size: 20px; margin-top: 15vh;"
+      <div style="background-color: rgba(195, 0, 255, 0); font-size: 20px; margin-top: 16vh;"
         class="value title style-scope ytls-broadcast-metadata">
         Titulo
       </div>
@@ -71,6 +67,7 @@
       <div style="background-color: rgba(195, 0, 255, 0); font-size: 1.5vw;"
         class="value title style-scope ytls-broadcast-metadata">
         Reunión semanal de los <br> Testigos de Jehová
+        
       </div>
 
       <div style="width: 80%; height: 1px; background-color: white; margin-top: 50px;"></div>
@@ -83,48 +80,55 @@
 
       <div style="background-color: rgba(195, 0, 255, 0); font-size: 1.5vw;"
         class="value title style-scope ytls-broadcast-metadata">
-        -
+        Jueves 6 de mayo de 2021
       </div>
 
       <div style="width: 80%; height: 1px; background-color: white; margin-top: 50px;"></div>
 
-      <button class="btnReport-lateral meterialAnimation">
+      <!--button class="btnReport-lateral meterialAnimation">
         <span>
           <img style="width: 2.5vw; margin-right: 20px;" src="./assets/svgs/error_outline_white_24dp.svg" alt="">
         </span>
         <label style="font-size: 1.5vw;">Reportar Error</label>
-      </button>
+      </button-->
 
 
     </div>
 
-    <div style="width: 100vw; height: 100vh; background-color: #161616;">
+    <div style="width: 100vw; height: 102vh; background-color: #161616;">
 
       <video id="player" class="video-js vjs-default-skin hide vjs-big-play-centered" controls preload="metadata"
         poster="./assets/imgs/Tarjeta Aniversary.png">
 
-        <source src="http://192.168.0.118:8080/livestream/stream.m3u8" type="application/x-mpegURL">
+        <source src="https://www.youtube.com/embed/lUVH1H4m4lg" type="application/x-mpegURL">
 
         Your browser does not support the video tag.
 
       </video>
 
+      <!--iframe class="yt-player" 
+      src="https://www.youtube.com/embed/zNm9cJG6pqE?autoplay=1" title="bls-player" oncontextmenu="return false" onkeydown="return true" 
+        frameborder="0"allowfullscreen>
+      </iframe-->
+
+      
 
       <div style="background-color: rgba(195, 0, 255, 0); margin-top: 3vh; margin-left: 5vw;"
         class="tamaño value title style-scope ytls-broadcast-metadata infoCentral">
         Reunión semanal de los Testigos de Jehová
+        
       </div>
 
       <div style="width: 100%; height: 1px; background-color: white; margin-top: 20px;" class="infoCentral"></div>
 
       <div style="background-color: rgba(195, 0, 255, 0);"
         class="value title style-scope ytls-broadcast-metadata tamaño-fecha infoCentral">
-        Jueves 18 de abril de 2021
+        Jueves 6 de mayo de 2021
       </div>
 
-      <button class="btn btn-light btnCentral">
+      <!--button class="btn btn-light btnCentral">
         <label style="font-size: 5vw;">Reportar Error</label>
-      </button>
+      </button-->
 
     </div>
 

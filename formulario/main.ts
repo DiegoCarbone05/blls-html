@@ -1,3 +1,25 @@
+
+
+
+jQuery(()=>{
+
+    $("#volver").on("click", ()=>{
+
+        location.href = "./meet-konnect";
+
+    })
+
+
+    
+
+
+})
+
+
+
+
+
+
 var numero = 0;
 
 function sumar() {
@@ -23,8 +45,6 @@ function restar() {
     }
 
 }
-
-
 
 
 
@@ -63,5 +83,6 @@ function btnVer(url:string){
     location.href=url;
 
 }
+
 
 

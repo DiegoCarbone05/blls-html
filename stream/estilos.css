@@ -1,0 +1,439 @@
+*{
+
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	outline: none !important; 
+}
+
+.table{
+
+    width: 95%;
+    margin-top: 80px;
+    margin-left: 2%;
+
+
+}
+
+ 
+/*.detalles{
+
+background-color: #212121;
+margin-top: 0%;
+margin-left: 20%;
+border-radius: 20px;
+width: 850%;
+height: 200px;
+
+}*/
+
+.detalles{
+    background-color: #212121;
+    width: 100%;
+    height: 720px;
+    position: relative;
+    min-width: 400px;
+}
+
+.player{
+
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+/*GanuButtomStyle*/
+
+.ganu-btn-live{
+    margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  transition:all 0.2s;
+  outline:none;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 100;
+  }
+  
+  .ganu-btn-live:hover{
+    outline: none;
+    background: linear-gradient( -90deg,rgba(255, 255, 255, 0), #ffffff34);
+    color: white;
+    box-shadow: -0px 0px 0px #ffffff;
+  
+  
+  }
+  
+  .ganu-btn-live:active{
+    
+      background-color: #ffffff;
+      outline: rgb(255, 255, 255);
+      /*background: linear-gradient( -90deg,#ffffff34, #ffffff34);*/
+      color: rgb(34, 34, 34);
+      /*box-shadow: eje-x eje-y glow #00000;*/
+      box-shadow: 2px 2px 20px rgb(255, 255, 255) ;
+      
+      /*border-radius: 5px;*/
+    }
+
+    .live-on{
+
+      width: fit-content; 
+      height: fit-content; 
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left:10px;
+      font-weight: bold;
+      background-color: #ff0000;
+      outline: rgb(255, 0, 0);
+      /*background: linear-gradient( -90deg,#ffffff34, #ffffff34);*/
+      color: rgb(255, 255, 255);
+      /*box-shadow: eje-x eje-y glow #00000;*/
+      box-shadow: 2px 2px 20px rgb(255, 0, 0) ;
+      border-radius: 5px;
+      transition: all 1s;
+      
+
+    }
+
+    .live-off{
+      
+      width: fit-content; 
+      height: fit-content; 
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left:0.5%;
+      font-weight: bold;
+      background-color: #380000;
+      outline: rgb(255, 0, 0);
+      /*background: linear-gradient( -90deg,#ffffff34, #ffffff34);*/
+      color: rgb(255, 255, 255);
+      /*box-shadow: eje-x eje-y glow #00000;*/
+      border-radius: 5px;
+      
+
+    }
+      
+
+    /*.hide{
+      display: 	none;
+      
+    }*/
+
+    #registrarAsistencia{
+
+    font-weight:500 ;
+    margin-left:74%;
+    
+    }
+
+    .toolBar{
+
+      width: 100px; 
+      height: 100vh; 
+
+      background-color: #212121;
+
+    }
+
+
+
+.btnVolver {
+	outline:none;
+	position: relative;
+	border: 0px;
+	background-color: #F04747;
+	padding: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 2vh;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	font-weight:550;
+	margin-left: 25px;
+
+}
+
+@media only screen and (max-width:1017px) {
+	.btnVolver{
+
+		margin-left: 0;
+
+	}
+  }
+	
+
+
+	.meterialAnimation {
+		outline:none;
+		position: relative;
+		border: 1px;
+		background-color: #4a6ea7;
+		border-color: white;
+		font-size: 28px;
+		color: #FFFFFF;
+		padding: 10px;
+		padding-top: 10px;
+		text-align: left;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		text-decoration: none;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	.meterialAnimation:after {
+		content: "";
+		display: block;
+		position: absolute;
+		padding-top: 300%;
+		padding-left: 350%;
+		margin-left: -20px!important;
+		margin-top: -120%;
+		opacity: 0;
+		transition: all 0.8s;
+		background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 0, 0, 0) );
+		
+	}
+
+
+	.meterialAnimation:active:after {
+			outline:none;
+		  padding: 0;
+		  margin: 0;
+		  opacity: 1;
+		  transition: 0s
+		}
+
+
+.btnReport-lateral{
+
+	position: relative;
+	
+	border-radius: 5px;
+	margin-top: 50px ;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+
+	padding: 1vw;
+
+	width: 80%;
+
+
+
+}
+
+.btnCentral{
+
+	background-color: #4a6ea7;
+	border: none;
+	box-shadow: 5px 5px 15px #00000010 ;
+	color: #2e2e2e;
+
+
+	font-weight:normal;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2vh;
+
+	height: 7vh;
+	border-radius: 0.5vw;
+
+	display: none;
+
+	margin-top: 5vw; 
+	margin-left: 5vw;
+
+
+
+  }
+
+  .btnCentral:hover{
+
+	background-color: #4a6ea7;
+
+	font-family: 'Montserrat', sans-serif;
+
+
+  }
+
+  .btnCentral:active{
+
+	background-color: #4a6ea7;
+
+	font-weight:normal;
+	font-family: 'Montserrat', sans-serif;
+
+
+  }
+
+@media only screen and (max-width:1017px){
+	
+	.btnCentral{
+		
+
+		display:block;
+
+	}
+
+}
+
+
+.lateralBar{
+
+	width: 40vw;
+	height: 89vh;
+	background-color: #2c2c2c;
+
+	padding-left: 40px;
+
+}
+
+
+
+
+@media only screen and (max-width:1017px){
+
+
+	.lateralBar{
+
+
+		display: none;
+
+
+	}
+
+
+
+}
+
+
+.container-flex{
+
+	display: flex;
+	flex-wrap: nowrap;
+	background: #2c2c2c;
+	
+  }
+
+
+.infoCenter{
+
+	display: none;
+
+
+
+}
+
+
+@media only screen and(min-width:1017px){
+
+	.infoCenter{
+
+		display: block;
+
+	}
+
+
+}
+
+.tamaño{
+
+	font-size: 45px;
+
+}
+
+@media only screen and (max-width:543px){
+
+.tamaño{
+
+	font-size: 25px;
+
+}
+
+}
+
+.infoCentral{
+
+	display: none;
+
+}
+
+@media only screen and (max-width:1017px) {
+
+	.infoCentral{
+
+		display: block;
+
+	}
+	
+}
+
+.tamaño-fecha{
+
+	font-size: 15px; 
+	margin-top: 2vh; 
+	margin-left: 5vw;
+
+}
+
+@media only screen and (min-width:543px){
+
+	.tamaño-fecha{
+	
+		font-size: 25px;
+	
+	}
+}
+
+.tamañoArrow{
+
+	width: 45px;
+
+}
+
+.ytp-watermark{
+
+	display: none !important;
+
+}
+
+.ytp-progress-bar{
+
+	color: #4a6ea7;
+
+}
+
+.yt-player{
+
+	
+	margin-top: 13vh; 
+	margin-left: 1.2vw; 
+	width: 97%; 
+	height: 38.5vw;
+	
+
+}
+
+@media only screen and (max-width:1017px) {
+	
+	.yt-player{
+	
+	width: 100vw;
+  	height: 55.9vw;
+ 	margin-top: 11vh;
+  	margin-left: 0;
+	
+	}
+}

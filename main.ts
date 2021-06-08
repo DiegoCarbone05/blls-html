@@ -23,6 +23,14 @@ jQuery(()=>{
     setTimeout(()=>{
         $('#btnModal').trigger("click");
     },3000)
+
+    $("#volver").on("click", ()=>{
+
+        location.href = "/meet-konnect";
+
+    })
+
+    
 })
 
 

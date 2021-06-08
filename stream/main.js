@@ -2,6 +2,6 @@
 //#player > button 
 jQuery(function () {
     $("#volver").on("click", function () {
-        location.href = "/meet-konnect";
+        location.href = "../";
     });
 });

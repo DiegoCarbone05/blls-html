@@ -2,112 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panel de control</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrio la loma Studio</title>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <link href="./video-js.scss" rel="stylesheet">
-  <script src=./video.js></script>
-
-
-  <link href="../../../../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <script src="../../../../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
-
-
-  <script src="./main.js"></script>
-
-
-  <link rel="stylesheet" href="estilos-pCtrl.scss">
-  <link rel="stylesheet" href="../../../../ganuStyle.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="../estilos/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="../estilos/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
 
 </head>
 
-<body style="background-color: #222222;">
+<body style="background-color:var(--dark-primary-color)">
+
+    <nav class="nav">
+        <div class="nav">
+
+            <button class="btnVolver" style="margin-top: 2vh; margin-left: 1vw; width: 7vw; height: 6vh; padding: 1.5vh   ;">
+                <label style="color: white;">SALIR</label>
+            </button>
+
+            <button class="btnlive" style=" left: 75vw; position: relative; margin-top: 2vh; margin-left: 1vw; width: fit-content; height: 6vh; padding: 1.5vh   ;">
+                <label style="color: white;">INICIAR TRANSMISION</label>
+            </button>
+
+            <button class="btnEndlive" style=" left: 75vw; position: relative; margin-top: 2vh; margin-left: 1vw; width: fit-content; height: 6vh; padding: 1.5vh   ;">
+                <label style="color: white;">INICIAR TRANSMISION</label>
+            </button>
 
 
-  <nav style=" height: 11vh; width: 100%; background: #4a6ea7 ;" class="navbar navbar-expand fixed-top">
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <button class="btnVolver"> <span><img style="width: 45px; margin-right: 20px;" src="./assets/svgs/arrow_back_white_24dp.svg" class="tamañoArrow" alt=""></span> Volver</button>
-
-    </div>
-  </nav>
-
-
-  <div>
-
-    <div class="prev">
-
-      <video id="player" class="video-js vjs-default-skin hide .vjs-big-play-centered" controls preload="none">
-
-        <source src="http://192.168.0.118:8080/livestream/stream.m3u8" type="application/x-mpegURL">
-
-        Your browser does not support the video tag.
-
-      </video>
-
-    </div>
-  
-    <div style="background-color: aqua; width: 20px; height: 20px;">
-
-      
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  var player = videojs('#player')
-</script>
-
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
-        <div class="modal-body">
-          <!-- Simple Textfield -->
-          <form action="#">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" id="sample1">
-              <label class="mdl-textfield__label" for="sample1">Text...</label>
+    </nav>
+
+    <div style="margin-right: 0.5vw; float: left; width: 62.6vw; height: 90vh; background-color: rgba(3, 105, 25, 0);">
+        <div class="cajaStream">
+
+            <div style="margin-left: 3vw; background-color: rgba(0, 255, 255, 0); width: 50%; height: 350px;">
+
+                <div style="width: 100%; height: 21vh; background-color: rgba(137, 43, 226, 0);">
+
+                    <label class="tituloTag">TITULO</label>
+                    <br>
+
+                    <Label class="titulo">Reunion semanal de los Testigos de Jehova</Label>
+
+                </div>
+
+                
+                <div style="width: 100%; height: 160px; background-color: rgba(0, 74, 77, 0);">
+                    <label class="fechaTag">FECHA</label>
+                    <br>
+
+                    <Label class="fecha">11 de mayo de 2021</Label>
+
+                </div>
             </div>
-          </form>
 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="cajaMonitoreo">
+            <div style="width: 30.5vw; height: 7vh; background-color:var(--dark-gray-color); text-align: center;">
+                <label style="font-size: 2vh; color: white;font-weight: bold; position: relative; margin-top: 2vh;">CONTROLES</label>
+            </div>
         </div>
-      </div>
+        <div class="cajaMonitoreo">
+            <div style="width: 30.5vw; height: 7vh; background-color:var(--dark-gray-color); text-align: center;">
+                <label style="font-size: 2vh; color: white;font-weight: bold; position: relative; margin-top: 2vh;">REGISTRO</label>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="cajaInfo" style="padding: 5vh ;">
 
+        <label style="margin-bottom: 5vh; color: white; font-size: 30px;">Informacion de transmision</label>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Titulo</span>
+            </div>
+            <input style="background-color: var(--dark-secodary-color); color:white;" type="text" class="form-control" placeholder="Insertar titulo" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3" style=" margin-top: 5vh;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Fecha</span>
+            </div>
+            <input style="background-color: var(--dark-secodary-color); color: white;" type="date" class="form-control" placeholder="Insertar fecha" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3" style=" margin-top: 5vh;" >
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">SRC</span>
+            </div>
+            <input style="background-color: var(--dark-secodary-color); color: white;" type="text" class="form-control" placeholder="Insertar URl de transmision" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+          
+        <div class="input-group mb-3" style=" margin-top: 5vh;">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Imagen</span>
+            </div>
+            <div class="custom-file" >
+              <input  type="file" class="custom-file-input" id="inputGroupFile01">
+              <label class="custom-file-label" style="background-color: var(--dark-secodary-color); color: white; " for="inputGroupFile01">Seleccionar imagen</label>
+            </div>
+          </div>
+
+          <div class="input-group mb-3" style=" margin-top: 5vh;">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Poster</span>
+            </div>
+            <div class="custom-file" >
+              <input  type="file" class="custom-file-input" id="inputGroupFile01">
+              <label class="custom-file-label" style="background-color: var(--dark-secodary-color);color: white; " for="inputGroupFile01">Seleccionar imagen</label>
+            </div>
+          </div>
+
+          <button class="btnAplicar" style=" position: relative; margin-top: 6vh; margin-left: 0; width: fit-content; height: 6vh; padding: 1.5vh   ;">
+            <label style="color: rgb(0, 0, 0);">Aplicar</label>
+        </button>
+    </div>
 
 
 
